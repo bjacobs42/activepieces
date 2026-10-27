@@ -12,6 +12,7 @@ import { updateCompanyAction } from './lib/actions/update-company';
 import { twentyAiActions } from './lib/actions/ai';
 import { newPersonTrigger } from './lib/triggers/new-person';
 import { newCompanyTrigger } from './lib/triggers/new-company';
+import { findCustomObject } from './lib/actions/find-custom-object';
 
 export { twentyAuth };
 
@@ -27,6 +28,7 @@ export const twenty = createPiece({
     createContactAction,
     createCompanyAction,
     createOpportunityAction,
+    findCustomObject,
     findPersonAction,
     findCompanyAction,
     updatePersonAction,
